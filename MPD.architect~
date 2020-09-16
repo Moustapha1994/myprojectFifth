@@ -29,7 +29,7 @@
   </data-source>
  </project-data-sources>
  <source-databases>
-  <database id="DB0" populated="true" UUID="5f8ab9ed-bf98-4201-8aa0-6637a464fdbc" dbcs-ref="DS2" name="Новое Подключение" physicalName="Новое Подключение" sql-exception="ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: Couldn&apos;t connect to database: Ошибка при попытке подсоединения." >
+  <database id="DB0" populated="true" UUID="5f8ab9ed-bf98-4201-8aa0-6637a464fdbc" dbcs-ref="DS2" name="Новое Подключение" physicalName="Новое Подключение" sql-exception="ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: ca.sqlpower.sqlobject.SQLObjectException: Couldn&apos;t connect to database: Ошибка при попытке подсоединения." >
    <relationships>
    </relationships>
   </database>
@@ -93,10 +93,19 @@
     <column id="COL17" populated="true" UUID="b3fb7fbb-bb53-4a15-9154-601ff052d21d" autoIncrement="false" autoIncrementSequenceName="Substitute_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL18" populated="true" UUID="c286fe1d-cc90-4195-b5a8-50a4e3b60454" autoIncrement="true" autoIncrementSequenceName="Substitute_id_product_to_substitute_seq" defaultValue="" name="id_product_to_substitute" nullable="0" physicalName="id_product_to_substitute" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="5" userDefinedTypeUUID="69fb547f-e14c-4748-9746-4c0e9e94eb52" >
+    <column id="COL18" populated="true" UUID="ad632d0f-c17d-48b6-9d0b-cae355d3942a" autoIncrement="false" autoIncrementSequenceName="Substitute_nom_seq" defaultValue="" name="nom" nullable="0" physicalName="nom" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL19" populated="true" UUID="51908039-c0ae-4409-9ad0-55a064700983" autoIncrement="true" autoIncrementSequenceName="Substitute_id_substitute_product_seq" defaultValue="" name="id_substitute_product" nullable="0" physicalName="id_substitute_product" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="5" userDefinedTypeUUID="69fb547f-e14c-4748-9746-4c0e9e94eb52" >
+    <column id="COL19" populated="true" UUID="b25fb523-e05e-4e38-919f-3ff2f349203d" autoIncrement="false" autoIncrementSequenceName="Substitute_lien_seq" defaultValue="" name="lien" nullable="0" physicalName="lien" precision="250" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="b8919703-0d74-4732-bd32-99e4e8c4b093" autoIncrement="false" autoIncrementSequenceName="Substitute_magasin_seq" defaultValue="" name="magasin" nullable="0" physicalName="magasin" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="cf77a183-cfd0-4110-be25-54b111820502" autoIncrement="false" autoIncrementSequenceName="Substitute_nutriscore_seq" defaultValue="" name="nutriscore" nullable="0" physicalName="nutriscore" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="c286fe1d-cc90-4195-b5a8-50a4e3b60454" autoIncrement="false" autoIncrementSequenceName="Substitute_id_product_to_substitute_seq" defaultValue="" name="id_product_to_substitute" nullable="0" physicalName="id_product_to_substitute" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     </folder>
@@ -105,17 +114,17 @@
     <folder id="FOLTAB162" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB164" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX20" populated="true" UUID="c9ee60fa-6c00-4a7c-9a44-8cad1f42d3a2" clustered="false" name="Substitute_pk" physicalName="substitut_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC21" populated="true" UUID="9b506dfd-1e78-4c23-b6e3-2fdfb2de6d17" ascendingOrDescending="UNSPECIFIED" column-ref="COL17" name="id" physicalName="id" />
+    <index id="IDX23" populated="true" UUID="c9ee60fa-6c00-4a7c-9a44-8cad1f42d3a2" clustered="false" name="Substitute_pk" physicalName="substitut_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC24" populated="true" UUID="9b506dfd-1e78-4c23-b6e3-2fdfb2de6d17" ascendingOrDescending="UNSPECIFIED" column-ref="COL17" name="id" physicalName="id" />
     </index>
    </folder>
   </table>
   <relationships>
-   <relationship id="REL22" populated="true" UUID="53a9aac9-733b-4ca1-bc4a-376c6a53242a" deferrability="7" deleteRule="3" fk-table-ref="TAB7" fkCardinality="7" identifying="true" name="Category_Aliment_fk" physicalName="Category_Aliment_fk" pk-table-ref="TAB2" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP23" populated="true" UUID="e7120491-5d46-48b3-a7bb-1d11c57dbf5b" fk-column-ref="COL8" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
+   <relationship id="REL25" populated="true" UUID="53a9aac9-733b-4ca1-bc4a-376c6a53242a" deferrability="7" deleteRule="3" fk-table-ref="TAB7" fkCardinality="7" identifying="true" name="Category_Aliment_fk" physicalName="Category_Aliment_fk" pk-table-ref="TAB2" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP26" populated="true" UUID="e7120491-5d46-48b3-a7bb-1d11c57dbf5b" fk-column-ref="COL8" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
    </relationship>
-   <relationship id="REL24" populated="true" UUID="d3bffcce-418b-4de3-965a-0166df2645d9" deferrability="7" deleteRule="3" fk-table-ref="TAB16" fkCardinality="7" identifying="true" name="Aliment_Substitut_fk" physicalName="Aliment_Substitut_fk" pk-table-ref="TAB7" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP25" populated="true" UUID="1e890421-2d40-49fa-90c8-70347444bc6f" fk-column-ref="COL17" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL8" />
+   <relationship id="REL27" populated="true" UUID="d3bffcce-418b-4de3-965a-0166df2645d9" deferrability="7" deleteRule="3" fk-table-ref="TAB16" fkCardinality="7" identifying="true" name="Aliment_Substitut_fk" physicalName="Aliment_Substitut_fk" pk-table-ref="TAB7" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP28" populated="true" UUID="1e890421-2d40-49fa-90c8-70347444bc6f" fk-column-ref="COL17" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL8" />
    </relationship>
   </relationships>
  </target-database>
@@ -126,8 +135,8 @@
   <table-pane table-ref="TAB2" x="312" y="172" bgColor="0xc7d0df" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB7" x="710" y="132" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB16" x="748" y="428" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL22" pkConnection="0.3333333333333333" fkConnection="0.5822784810126582" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL24" pkConnection="0.5309278350515464" fkConnection="0.4557522123893805" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL25" pkConnection="0.3333333333333333" fkConnection="0.5822784810126582" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL27" pkConnection="0.5309278350515464" fkConnection="0.4557522123893805" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
