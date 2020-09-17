@@ -3,7 +3,7 @@ import mysql.connector
 from conf import CHAMP, db
 from math import fabs
 
-class Program:
+class Interaction:
     """This Class manages the interaction between the user and the console """
     def __init__(self):
         self.cnx = mysql.connector.connect(**CHAMP, database=db)

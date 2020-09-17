@@ -1,24 +1,24 @@
 
 """Main file"""
-from program import Program
+from program import Interaction
 from Class import Init
 
 def main():
     """Main function"""
     try:
-        programme = Program()
+        interact= Interaction()
     except:
         print("Executez le fichier main.py utilisant un argument (- i ou --init) en premier")
         exit(1)
 
     run = True
     while run:
-        programme.see_substitutes()
-        programme.display_category()
-        programme.display_product()
-        programme.display_substitute()
+        interact.see_substitutes()
+        interact.display_category()
+        interact.display_product()
+        interact.display_substitute()
 
-        run = programme.continu()
+        run = interact.continu()
 
 Arg = None
 
